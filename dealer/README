@@ -1,0 +1,20 @@
+Proyecto Concesionario
+
+Se han aplicado todos los escenarios indicados en el pdf que representa la prueba técnica.
+
+A continuación se indican los rest utilizados:
+
+-----http://localhost:8081/api/dealer/coches/specifications?carId={id}&initDate={fecha}
+Ejemplo: ?carId=1&initDate=2021-05-19T00:00:00Z (formato ISO 8601)
+En este Rest se obtiene los coches filtrados por el id y la fecha indicada en los parámentros de entrada.
+
+-----http://localhost:8081/api/dealer/coches?filter=<condición>
+Este Rest obtiene toda la información de los vehículos que cumplan la condición especificada. Se ha programado para que acepte
+campo valor separado por un eq, = o like.
+
+-----http://localhost:8081/api/dealer/coches/download
+Rest que descarga toda la información almacenada en la tabla de Car en un excel.
+
+Tanto el primer Rest como el segundo expuesto, cada vez que se realiza un acceso se guarda en la colección api_calls.
+
+El proyecto dispone de una BBDD H2 y otra de Mongo BD embebidas.

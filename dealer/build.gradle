@@ -1,0 +1,14 @@
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter:*"
+    compile "org.springframework.boot:spring-boot-starter-web:*"
+    compile "com.h2database:h2:*"
+    compile "org.springframework.boot:spring-boot-starter-data-jpa:*"
+    compile "org.projectlombok:lombok:*"
+    compile "de.flapdoodle.embed:de.flapdoodle.embed.mongo:1.50.5"
+    compile "org.springframework.boot:spring-boot-starter-data-mongodb:*"
+    compile "org.apache.poi:poi:3.15"
+    compile "org.apache.poi:poi-ooxml:3.15"
+    testCompile "org.springframework.boot:spring-boot-starter-test:*"
+    testCompile "org.mockito:mockito-inline:3.8.0"
+    testCompile "junit:junit:4.12"
+}
